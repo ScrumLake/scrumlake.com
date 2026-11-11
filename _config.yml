@@ -1,3 +1,5 @@
+url: https://scrumlake.com
+
 navigation:
   - title: Scrum Lake
     url: /
@@ -16,6 +18,5 @@ legal:
   - title: Copyright, Licenses and Disclaimer
     url: /legal/agreements
 
-sales:
-  - title: 7 People
-    url: /7people
+plugins:
+  - jekyll-sitemap

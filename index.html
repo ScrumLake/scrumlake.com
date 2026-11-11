@@ -11,19 +11,17 @@ description: Co-creative Scrum exploration workshops using the power of metaphor
 
     {% include bubbles.html %}
 
-    <div id="videoModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div id="videoModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content rounded-0">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="videoModalLabel">Introduction to Scrum Lake</h5>
+                    <p class="h5 modal-title" id="videoModalLabel">Introduction to Scrum Lake</p>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <video id="videoscrumlake" controls>
-                        <source src="images/scrumlake.mp4" type="video/mp4">
-                      </video>
+                    <video id="videoscrumlake" controls preload="none" playsinline></video>
                 </div>
             </div>
         </div>
@@ -40,7 +38,10 @@ description: Co-creative Scrum exploration workshops using the power of metaphor
                 unique space to share stories, learn techniques, and explore Scrum theory, practice, and reality.
             </p>
                         
-            <img src="images/attendees.png" class="img-fluid" alt="Just a small selection of Happy Scrum Lake participants from previous workshops - Gregory, Ovidiu, Jamie, Marion, Kapil, Richard, Gianni, Tom and Katrin" />
+            <picture>
+                <source srcset="/images/attendees.webp" type="image/webp">
+                <img src="/images/attendees.png" width="1400" height="475" class="img-fluid" alt="Just a small selection of Happy Scrum Lake participants from previous workshops - Gregory, Ovidiu, Jamie, Marion, Kapil, Richard, Gianni, Tom and Katrin">
+            </picture>
 
             <p class="lead">
                 We are very proud that Scrum Lake workshops are consistently well received, this is due to the 
@@ -50,7 +51,12 @@ description: Co-creative Scrum exploration workshops using the power of metaphor
         </div>
         <div class="col-md-5">
 
-            <img src="images/scrumlakecanvas.png" class="img-fluid" alt="Scrum Lake Co-Creative Canvas" data-toggle="modal" data-target="#videoModal" />
+            <button type="button" class="video-launch" data-toggle="modal" data-target="#videoModal" aria-label="Play the introduction to Scrum Lake video">
+                <picture>
+                    <source srcset="/images/scrumlakecanvas.webp" type="image/webp">
+                    <img src="/images/scrumlakecanvas.png" width="1200" height="1230" class="img-fluid" alt="Scrum Lake co-creative canvas. Plays the introduction video." fetchpriority="high">
+                </picture>
+            </button>
 
         </div>
     </div>
@@ -63,7 +69,7 @@ description: Co-creative Scrum exploration workshops using the power of metaphor
             <h2 class="featurette-heading">Share<span class="text-muted"> collaborate and grow</span></h2>
             <p class="lead">
                 Scrum Lake workshops are interactive sessions where Scrum enthusiasts of all levels can 
-                hare stories, learn techniques and deepen their understanding of Scrum. You will work with 
+                share stories, learn techniques and deepen their understanding of Scrum. You will work with 
                 an experienced facilitator and other Scrum Masters to co-create and explore various aspects 
                 of Scrum in a two-hour workshop. You will have the chance to dive into topics such as values, 
                 trust, empiricism, Lean thinking, artifacts, events or accountabilities. You will also benefit 
@@ -75,7 +81,10 @@ description: Co-creative Scrum exploration workshops using the power of metaphor
             </p>
         </div>
         <div class="col-md-5 order-md-1">
-            <img src="images/scrummarine.png" class="img-fluid" alt="A Scrum Team is like a submarine" />
+            <picture>
+                <source srcset="/images/scrummarine.webp" type="image/webp">
+                <img src="/images/scrummarine.png" width="1100" height="851" class="img-fluid" alt="A Scrum Team is like a submarine" loading="lazy" decoding="async">
+            </picture>
         </div>
     </div>
 
@@ -101,8 +110,10 @@ description: Co-creative Scrum exploration workshops using the power of metaphor
 
         </div>
         <div class="col-md-5">
-            <img src="images/ship.png" class="img-fluid"
-                alt="An image of a pirate ship. The Sprint is like the hull of a ship in that it is a container.">
+            <picture>
+                <source srcset="/images/ship.webp" type="image/webp">
+                <img src="/images/ship.png" width="1000" height="1000" class="img-fluid" alt="An image of a pirate ship. The Sprint is like the hull of a ship in that it is a container." loading="lazy" decoding="async">
+            </picture>
         </div>
     </div>
 

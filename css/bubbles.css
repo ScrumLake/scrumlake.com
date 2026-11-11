@@ -1,3 +1,15 @@
+/* Clip the rising bubbles to the top of the page. Their sideways drift
+   otherwise widens the document on a narrow viewport. */
+.bubbles {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+}
+
 .bubble{
   position: absolute;
   bottom:-100px;
