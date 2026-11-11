@@ -1,0 +1,126 @@
+/* Darkened from Bootstrap's #007bff (3.98:1 on white) so text and the
+   outline button clear WCAG AA 4.5:1 while staying in the same blue family.
+   #0058c0 on white is 6.65:1. */
+a {
+  color: #0058c0;
+}
+
+a:hover {
+  color: #004a99;
+}
+
+.btn-link {
+  color: #0058c0;
+}
+
+.btn-link:hover,
+.btn-link:focus {
+  color: #004a99;
+}
+
+.btn-outline-primary {
+  color: #0058c0;
+  border-color: #0058c0;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.btn-outline-primary:not(:disabled):not(.disabled).active {
+  color: #fff;
+  background-color: #0058c0;
+  border-color: #0058c0;
+}
+
+.btn-outline-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 88, 192, 0.45);
+}
+
+/* Links sitting in a sentence need an underline, not colour alone. */
+main a:not(.btn):not(.fa),
+footer small a {
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+main a.btn,
+main a.fa,
+a.fa {
+  text-decoration: none;
+}
+
+/* Image control that opens the intro video. Reset button chrome so it
+   still looks like the canvas illustration. */
+.video-launch {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.video-launch:focus {
+  outline: 3px solid #0058c0;
+  outline-offset: 4px;
+}
+
+.video-launch img {
+  width: 100%;
+  height: auto;
+}
+
+/* Decorative bubbles animate past the viewport edge. */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Cookie bar is position:fixed and its message/buttons are floated, so the
+   bar's box can collapse and the script reserves too little space. Contain
+   the floats, cancel that margin, and keep page content clear of the bar. */
+#cookie-bar::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  margin-bottom: 0 !important;
+  padding-bottom: 7rem;
+}
+
+.navbar-toggler {
+  min-width: 48px;
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-nav .nav-link {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+  }
+
+  footer .list-unstyled a,
+  footer small a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 48px;
+    padding: 0.4rem 0.35rem;
+  }
+
+  footer .list-unstyled a {
+    display: flex;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+}
